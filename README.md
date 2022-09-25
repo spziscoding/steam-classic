@@ -7,7 +7,7 @@ This skin for the new chat and friends UI was created after Valve made it proble
 
 1. Extract the Classic folder from [classic_steam.zip](https://github.com/spziscoding/steam-classic/bloc/main/classic_steam.zip) to Steam/skins
 2. Save the [friends.custom.css](https://github.com/spziscoding/steam-classic/bloc/main/friends.custom.css) file to your PC and put in your Steam\clientui\ folder.
-3. [https://github.com/PhantomGamers/SFP/releases](Download) the latest patcher to allow for customization.
+3. [Download](https://github.com/PhantomGamers/SFP/releases) the latest patcher to allow for customization.
 4. Launch the patcher and wait for it to apply the changes.
 5. Restart Steam.
 
