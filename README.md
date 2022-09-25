@@ -30,7 +30,3 @@ This skin for the new chat and friends UI was created after Valve made it proble
 * [https://github.com/PhantomGamers](PhantomGamers) for creating the tool that allows to apply skins, and for tips on managing the randomized class names.
 * [https://github.com/redsigma](RedSigma) for creating a custom skin for the new chat, which I initially used as a template.
 * [https://github.com/RoseTheFlower](RoseTheFlower) for creating a clean metro skin ui for the new chat, which I was inspired to recreate the green classic skin.
-
-## Preview
-
-![Steam Classic Preview]([https://github.com/spziscoding/steam-classic/bloc/main/preview.png])
