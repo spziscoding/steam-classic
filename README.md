@@ -1,5 +1,5 @@
 # Green Classic skin for Steam chat and friends UI
-This skin for the new chat and friends UI was created after Valve made it problematic to revert to the old-style windows. My quest was to make the new windows look as close as possible to those of the old flat classic green steam skin.
+This skin for the new chat and friends UI was created after Valve made it problematic to revert to the old-style steam windows. My quest was to make the new windows look as close as possible to those of the old flat classic green steam skin.
 
 ## Installation
 
