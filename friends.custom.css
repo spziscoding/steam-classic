@@ -1,6 +1,6 @@
 :root {
   --chatfont: 11px; /* Font size for chat messages */
-  --scrollbarSize: 15px;
+  --scrollbarSize: 17px;
 
   /* Color presets: */
   --focus: 145, 134, 60; /* Default Metro skin purple accent */
@@ -8,7 +8,7 @@
   --W10close_Red_h: 76, 88, 68; /* Window close button color on hover */
   --W10close_Red_p: 76, 88, 68; /* Window close button color when pressed */
   --clientBG: 76, 88, 68;
-  --header_dark: 62, 70, 55;
+  --header_dark: 76, 88, 68;
   --online: 255, 255, 255;
   --ingame: 255, 255, 255;
   --offline: 141, 146, 149;
@@ -56,6 +56,13 @@
 --textentrybuttons: 35, 50, 50;
 */
 
+:root {
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid #282e22;
+  border-right: 1px solid #282e22;
+}
+
 /* Remove animations, round corners and delays */
 * {
   box-shadow: none !important;
@@ -83,7 +90,12 @@
 
 /* Friends list window*/
 .friendlistListContainer {
-  background: rgb(var(--clientBG)) !important;
+  margin: 5px;
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-top: 1px solid #282e22;
+  border-left: 1px solid #282e22;
+  background: #3e4637 !important;
 }
 
 /* Top friends list panel bg*/
@@ -812,28 +824,42 @@ button.DialogButton,
 /* scroll bar*/
 ::-webkit-scrollbar {
   width: var(--scrollbarSize) !important;
+  background: #5a6a50!important;
 }
 .ChatTabs ::-webkit-scrollbar-thumb {
-  background-color: transparent !important;
+  background-color: #4c5844!important;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #282e22;
+  border-right: 1px solid #282e22;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0px !important;
-  background: rgba(var(--white05)) !important;
-  border: 0px solid #131313 !important;
+  background: #4c5844!important;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #282e22;
+  border-right: 1px solid #282e22;
 }
 
 .chatWindow ::-webkit-scrollbar,
 .friendlist ::-webkit-scrollbar {
-  background: rgb(var(--clientBG)) !important;
+  background: #5a6a50!important;
   width: var(--scrollbarSize) !important;
 }
 /* scroll bar button */
 ::-webkit-scrollbar-button {
-  height: 16px !important;
-  border-radius: 0px !important;
-  background-color: none !important;
-  border: 2px solid transparent !important;
+  height: 17px !important;
+  background-color: #4c5844!important;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #282e22;
+  border-right: 1px solid #282e22;
+  align-items: center!important;
+  text-align: center!important;
+  justify-content: center!important;
+  vertical-align: middle!important;
 }
 
 /* disables scroll buttons at settings */
@@ -841,8 +867,11 @@ button.DialogButton,
   display: none !important;
 }
 
-::-webkit-scrollbar-button:hover {
-  background-color: rgba(var(--white05)) !important;
+::-webkit-scrollbar-button:active, ::-webkit-scrollbar-button:focus  {
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-top: 1px solid #282e22;
+  border-left: 1px solid #282e22;
 }
 
 /* Remove the following sections when on Linux or Mac */
@@ -852,13 +881,13 @@ button.DialogButton,
 ::-webkit-scrollbar-button:vertical:increment {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJElEQVQI12OAAQcGFoYJDBIMKUAoyTiBgc3NgYFxJVAiBa4EAFbgA/lztmmEAAAAAElFTkSuQmCC);
   background-repeat: no-repeat !important;
-  background-position: 0px 0px !important;
+  background-position: 2px 2px !important;
 }
 /* Up */
 ::-webkit-scrollbar-button:vertical:decrement {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJUlEQVQI12OAgxQGBsaVDAxsbg4MkowTGFKAcAKDBIMDAwtMBQBYIAP5KnftSQAAAABJRU5ErkJggg==);
   background-repeat: no-repeat !important;
-  background-position: 0px 0px !important;
+  background-position: 2px 2px !important;
 }
 
 /* Remove the above sections when on Linux or Mac */
@@ -866,11 +895,6 @@ button.DialogButton,
 /* background behind scrollbar */
 ::-webkit-scrollbar-track {
   background-color: none !important;
-}
-/* hovering for the scrollbar itself */
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(var(--white10)) !important;
-  border-radius: 0px !important;
 }
 
 .multiChatDialog {
@@ -1854,16 +1878,83 @@ button.DialogButton.Primary:hover {
 .title-area-icon:hover{
 background: rgba(var(--white05))!important;}*/
 
-.minimizeButton:hover,
-.maximizeButton:hover,
-.restoreButton:hover {
-  background: rgba(var(--white05)) !important;
+.minimizeButton,
+.maximizeButton,
+.restoreButton,
+.closeButton {
+  background: #4c5844;
+  color: #87907f!important;
+  font-size: 10px!important;
+  font-weight: bold;
+  font-family: 'Verdana',sans-serif!important;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #282e22;
+  border-right: 1px solid #282e22;
+  width: 20px!important;
+  height: 20px!important;
+  padding: 0!important;
+  margin-top: 7px!important;
+  margin-right: 3px!important;
+  padding-top: 4px!important;
+  padding-right:5px!important;
+  padding-bottom: 3px!important;
+  zoom: 0.7!important;
+}
+
+.maximizeButton,
+.closeButton {
+  background: #4c5844;
+  color: #87907f!important;
+  font-size: 10px!important;
+  font-weight: bold;
+  font-family: 'Verdana',sans-serif!important;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #282e22;
+  border-right: 1px solid #282e22;
+  width: 20px!important;
+  height: 20px!important;
+  padding: 0!important;
+  margin-top: 7px!important;
+  margin-right: 3px!important;
+  padding-top: 8px!important;
+  padding-right:5px!important;
+  padding-left:1px!important;
+  padding-bottom: -2px!important;
+  zoom: 0.7!important;
+}
+
+.closeButton {
+  background: #4c5844;
+  color: #87907f!important;
+  font-size: 10px!important;
+  font-weight: bold;
+  font-family: 'Verdana',sans-serif!important;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #282e22;
+  border-right: 1px solid #282e22;
+  width: 20px!important;
+  height: 20px!important;
+  padding: 0!important;
+  margin-top: 7px!important;
+  margin-right: 4px!important;
+  padding-top: 8px!important;
+  padding-right:4px!important;
+  padding-left:2px!important;
+  padding-bottom: -2px!important;
+  zoom: 0.7!important;
 }
 
 .minimizeButton:active,
 .maximizeButton:active,
-.restoreButton:active {
-  background: rgba(var(--white10)) !important;
+.restoreButton:active,
+.closeButton:active {
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-top: 1px solid #282e22;
+  border-left: 1px solid #282e22;
 }
 
 .closeButton:not([class*="chattabs_CloseButton_"]):hover {
