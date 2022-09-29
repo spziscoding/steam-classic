@@ -65,6 +65,8 @@
 
 /* Remove animations, round corners and delays */
 * {
+  font-smooth: never !important;
+  -webkit-font-smoothing : none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
   transition: none !important;
@@ -129,11 +131,11 @@
 
 /* Online Friends header */
 .onlineFriends .groupHeaderContainer {
-  background: rgb(var(--clientBG)) !important;
+  background: transparent !important;
 }
 /* Offline Friends header */
 .offlineFriends .groupHeaderContainer {
-  background: rgb(var(--clientBG)) !important;
+  background: transparent !important;
 }
 
 /* Remove each category header margin */
@@ -152,13 +154,11 @@
 /*Number of friends in a category*/
 .friendGroup .groupName .groupCount {
   color: rgb(var(--white)) !important;
-  margin-top: 0px !important;
+  margin-bottom: 1px !important;
 }
 .groupName {
   color: rgb(var(--white)) !important;
   font-size: 12px !important;
-  text-transform: uppercase !important;
-  margin-bottom: -3px !important;
 }
 
 .friendGroup .groupName {
@@ -232,38 +232,38 @@
 
 .chatRoomMembers .CompactFriendsList .friend:hover,
 .MemberListColumn .friend:hover {
-  background-color: rgba(var(--white05));
+  background-color: #282e22;
 }
 
 /* Friends list items hover colors */
 .friendStatusHover.online:hover,
 .friendStatusHover.online.Friend_ContextMenuActive {
-  background-color: rgba(var(--white05)) !important;
+  background-color: #282e22;
 }
 
 .friendStatusHover.ingame:hover,
 .friendStatusHover.ingame.Friend_ContextMenuActive {
-  background-color: rgba(var(--white05)) !important;
+  background-color: #282e22;
 }
 
 .friendStatusHover.offline:hover,
 .friendStatusHover.offline.Friend_ContextMenuActive {
-  background-color: rgba(var(--white05)) !important;
+  background-color: #282e22;
 }
 
 .friendStatusHover.watchingbroadcast:hover,
 .friendStatusHover.watchingbroadcast.Friend_ContextMenuActive {
-  background-color: rgba(var(--white05)) !important;
+  background-color: #282e22;
 }
 
 .friendStatusHover.golden:hover,
 .friendStatusHover.golden.Friend_ContextMenuActive {
-  background-color: rgba(var(--white05)) !important;
+  background-color: #282e22;
 }
 
 /*Group chats hover*/
 .ChatRoomListGroupItem:hover {
-  background-color: rgba(var(--white05)) !important;
+  background-color: #282e22;
 }
 
 /* Avatar status boxes */
@@ -363,7 +363,15 @@
 }
 
 .chatWindow {
-  background: rgb(var(--clientBG)) !important;
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-top: 1px solid #282e22;
+  border-left: 1px solid #282e22;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  background: #3e4637!important;
   font-size: var(--chatfont) !important;
 }
 .chatRoomListContainer {
@@ -375,7 +383,12 @@
   border: none !important;
 }
 .chatEntryControls {
-  background-color: rgb(var(--textentry)) !important;
+  background-color: #5a6a50 !important;
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-top: 1px solid #282e22;
+  border-left: 1px solid #282e22;
+  height: 30px!important;
 }
 
 /* Avatar status inside the chat tabs context menu */
@@ -578,7 +591,7 @@
 }
 [class*="contextmenu_contextMenuItem_"]:hover,
 [class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"] {
-  background: rgba(var(--white05)) !important;
+  background: #91863c!important;
 }
 
 [class*="contextmenu_contextMenuItem_"][class*="contextmenu_SubMenu_"] {
@@ -1183,7 +1196,7 @@ button.DialogButton,
   color: #8c8c8c;
   padding: 0px 4px 0px 10px;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 [class*="chattabs_ChatTab_"] .chatTabHighlight {
